@@ -1,4 +1,7 @@
 #!/bin/bash
-# Usage: ./simple-interest.sh <principal> <rate> <time>
-if [ $# -ne 3 ]; then echo "Usage: $0 principal rate time"; exit 1; fi
-echo "Simple Interest = $(echo "scale=2; $1 * $2 * $3 / 100" | bc)"
+# Simple Interest Calculator: SI = (P * R * T) / 100
+read -p "Enter principal amount: " principal
+read -p "Enter rate of interest (%): " rate
+read -p "Enter time period (years): " time
+si=$(echo "scale=2; $principal * $rate * $time / 100" | bc)
+echo "Simple Interest = $si"

@@ -4,7 +4,7 @@ A small shell script that calculates simple interest using SI = (P x R x T) / 10
 
 ## Usage
 ```bash
-./simple-interest.sh 1000 5 2   # prints: Simple Interest = 100.00
+./simple-interest.sh   # prompts for principal, rate and time
 ```
 
 ## Files
